@@ -25,29 +25,30 @@
 C:\Users\Administrator\Desktop\freeglut\lib\libfreeglut.a 檔案名稱改為 libglut32.a
 7.開啟code:blocks開啟上週作業，並新增(FileàNewàProject)GLUT專案，命名:week03_color(*詳細見week01-3)
 8.開啟後將所有程式碼刪掉，輸入今天教學的程式碼，成功將出現黃色茶壺
-    ```///將程式碼全刪掉
-    #include <GL/freeglut.h>
-    void display()
-    {
-        glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
-    
-        glColor3f(1,1,0);///顏色黃色
-        glutSolidTeapot(0.3);///0.3 實心茶壺
-    
-        glutSwapBuffers();///2被交換的buffer
-    }
-    
-    int main(int argc, char**argv)
-    {///進階的main函式
-        glutInit( &argc, argv);///初始化
-        glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH);///兩倍交換避免畫面閃爍+3D深度
-        glutCreateWindow("week03的視窗");///建視窗
-    
-        glutDisplayFunc( display );///畫圖函式
-    
-        glutMainLoop();///主要迴圈
-        return 0;
-    }```
+```///將程式碼全刪掉
+#include <GL/freeglut.h>
+void display()
+{
+    glClear( GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+
+    glColor3f(1,1,0);///顏色黃色
+    glutSolidTeapot(0.3);///0.3 實心茶壺
+  
+    glutSwapBuffers();///2被交換的buffer
+}
+   
+int main(int argc, char**argv)
+{///進階的main函式
+    glutInit( &argc, argv);///初始化
+    glutInitDisplayMode( GLUT_DOUBLE | GLUT_DEPTH);///兩倍交換避免畫面閃爍+3D深度
+    glutCreateWindow("week03的視窗");///建視窗
+
+    glutDisplayFunc( display );///畫圖函式
+ 
+    glutMainLoop();///主要迴圈
+    return 0;
+}
+```
 9.開啟新檔(FileàNewàProject)，命名:week03_color_triangle，做彩色三角形
 ```///將程式碼全刪掉
 #include <GL/freeglut.h>
@@ -74,5 +75,6 @@ glutInit( &argc, argv);///初始化
 
     glutMainLoop();///主要迴圈
     return 0;
-}```
+}
+```
 10.上傳到git hub
