@@ -1,0 +1,23 @@
+# depslib dependency file v1.0
+1647851895 source:c:\users\administrator\desktop\week05_translate_motion\main.cpp
+	<GL/freeglut.h>
+	<stdio.h>
+
+1647841571 c:\users\administrator\desktop\freeglut\include\gl\freeglut.h
+	"freeglut_std.h"
+	"freeglut_ext.h"
+
+1647841571 c:\users\administrator\desktop\freeglut\include\gl\freeglut_std.h
+	<windows.h>
+	<EGL/egl.h>
+	<GLES/gl.h>
+	<GLES2/gl2.h>
+	<OpenGL/gl.h>
+	<OpenGL/glu.h>
+	<GL/gl.h>
+	<GL/glu.h>
+	<stdlib.h>
+
+1647841571 c:\users\administrator\desktop\freeglut\include\gl\freeglut_ext.h
+	<stdarg.h>
+
